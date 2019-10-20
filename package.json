@@ -1,0 +1,44 @@
+{
+  "name": "veganmeetsbackend",
+  "version": "0.0.1",
+  "description": "\u0016VeganMeets is an app that helps people find and support restaurants that have vegan options.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "test": "cross-env DB_ENV=testing jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eralpkor/VeganMeetsBackEnd.git"
+  },
+  "keywords": [
+    "vegan",
+    "meets"
+  ],
+  "author": "eralp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eralpkor/VeganMeetsBackEnd/issues"
+  },
+  "homepage": "https://github.com/eralpkor/VeganMeetsBackEnd#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^3.20.0",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.19.2",
+    "sqlite3": "^4.1.0"
+  },
+  "devDependencies": {
+    "cross-env": "^6.0.3",
+    "jest": "^24.9.0",
+    "nodemon": "^1.19.1",
+    "supertest": "^4.0.2"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
