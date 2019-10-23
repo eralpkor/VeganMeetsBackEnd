@@ -3,8 +3,8 @@ VeganMeets is an app that helps people find and support restaurants that have ve
 
 ## API Endpoints
 ## Register a new user
-### POST api/use/register
-https://example.com/user/register
+### POST /register
+https://example.com/register
 
 Expects object:
 ```
@@ -17,8 +17,8 @@ Expects object:
 }
 ```
 ## Log in a user
-###  POST api/user/login
-https://example.com/user/login
+###  POST /login
+https://example.com/login
 
 Expects object:
 
