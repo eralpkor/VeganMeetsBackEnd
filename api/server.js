@@ -1,9 +1,9 @@
 const express = require('express');
 const cors = require('cors');
 const helmet = require('helmet');
-// require('dotenv').config()
+require('dotenv').config()
 // add routers files here 
-const usersRouter = require('../users/users-router');
+const usersRouter = require('../users/users-router.js');
 
 const server = express();
 
