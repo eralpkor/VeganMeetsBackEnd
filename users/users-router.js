@@ -19,23 +19,23 @@ router.post('/register', (req, res) => {
 });
 
 // POST /login after signup login to service
-// router.post('/login', (req, res) => {
-//   const { username, password } = req.body;
+router.post('/login', (req, res) => {
+  const { username, password } = req.body;
 
-//   Users.findById({ username })
-//     .first()
-//     .then(u => {
-//       if (u === u.username && u.password === password) {
-//         res.status(200).json({ message: `Welcome back ${u.username}`})
-//       } else {
-//         res.status(401).json({ message: `Wrong login credentials...`})
-//       }
-//     })
-//     .catch(err => {
-//       console.log(err);
-//       res.status(500).json(err)
-//     });
-// });
+  Users.findById({ username })
+    .first()
+    .then(u => {
+      if (u === u.username && u.password === password) {
+        res.status(200).json({ message: `Welcome back ${u.username}`})
+      } else {
+        res.status(401).json({ message: `Wrong login credentials...`})
+      }
+    })
+    .catch(err => {
+      console.log(err);
+      res.status(500).json(err)
+    });
+});
 
 module.exports = router;
 
